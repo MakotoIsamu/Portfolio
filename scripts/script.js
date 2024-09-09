@@ -10,6 +10,57 @@ const handleScroll = () => {
 
 window.addEventListener("scroll", handleScroll, { passive: true });
 
+
+// Existing code...
+
+// Mouse follower functionality
+const mouseFollower = document.querySelector('.mouse-follower');
+
+gsap.set(mouseFollower, {
+  xPercent: -50,
+  yPercent: -50,
+  scale: 0.5,
+  opacity: 0.8,
+});
+
+document.addEventListener('mousemove', (e) => {
+  gsap.to(mouseFollower, {
+    duration: 0.4,
+    x: e.clientX,
+    y: e.clientY,
+    opacity: 0.8, // Ensures opacity is reset on mousemove
+  });
+});
+
+document.addEventListener('mouseleave', () => {
+  gsap.to(mouseFollower, {
+    duration: 0.4,
+    opacity: 0, // Fades out when the mouse leaves
+  });
+});
+
+
+// Grow mouse follower when hovering over videos
+const videos = document.querySelectorAll('video');
+
+videos.forEach(video => {
+  video.addEventListener('mouseenter', () => {
+    gsap.to(mouseFollower, {
+      scale: 1,
+      opacity: 1,
+      duration: 0.3,
+    });
+  });
+
+  video.addEventListener('mouseleave', () => {
+    gsap.to(mouseFollower, {
+      scale: 0.5,
+      opacity: 0.8,
+      duration: 0.3,
+    });
+  });
+});
+
 // GSAP animations
 document.addEventListener("DOMContentLoaded", () => {
   const tl = gsap.timeline();

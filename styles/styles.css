@@ -9,6 +9,16 @@
   text-decoration: none;
   color: #e7cfb1;
 }
+.mouse-follower {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
 #main {
   height: 100%;
   width: 100%;
@@ -36,10 +46,6 @@ nav.navbar--hidden {
   font-size: 20px;
 }
 .mid-nav {
-  cursor: pointer;
-  font-size: 20px;
-}
-.chat-icon {
   cursor: pointer;
   font-size: 24px;
 }
@@ -254,6 +260,7 @@ nav.navbar--hidden {
 .project-left-box video {
   width: 100%;
   object-fit: cover;
+  cursor: pointer;
 }
 .project-name {
   font-size: 30px;
