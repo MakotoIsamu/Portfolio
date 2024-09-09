@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Portfolio | Web Development</title>
+</head>
+
+<body>
+    <nav>
+        <p class="logo">DHRUV VERMA</p>
+        <p class="mid-nav">
+            <i class="ri-message-2-fill" onclick="toggleChat()"></i>
+        </p>
+    </nav>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            Chat with Dhruv's Bot
+            <button class="close-chat">&times;</button>
+        </div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type Yes or No">
+            <button class="send-btn" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <div id="main">
+        <section id="hero-section">
+            <h1 class="animated-text">
+                <span>h</span>
+                <span>e</span>
+                <span>l</span>
+                <span>l</span>
+                <span>o</span>
+            </h1>
+            <div class="container-1">
+                <p>i am a fullstack</p>
+                <p>
+                    <span class="dev-text">web</span>
+                    <span class="dev-text">DEVEL</span>
+                    <span class="circle"></span>
+                    <span class="dev-text">PER</span>
+                </p>
+            </div>
+        </section>
+        <section id="about-section">
+            <div class="something">
+                <div class="image-container">
+                    <img src="./assets/bdf66383657c76085091c2aa886edc04.jpg" alt="my image" />
+                </div>
+                <div class="asd">
+                    <p>
+                        Hello! I'm a passionate web developer with a keen eye for creating
+                        beautiful, functional websites.
+                    </p>
+                    <p>
+                        With 1 year of experience in the field, I've honed my skills in
+                        both front-end and back-end development, allowing me to craft
+                        complete web solutions from the ground up.
+                    </p>
+                    <p>
+                        My goal is to build intuitive, user-friendly interfaces that not
+                        only look great but also provide seamless functionality.
+                    </p>
+                    <p>
+                        I'm constantly learning and adapting to new technologies to stay
+                        at the forefront of web development.
+                    </p>
+                    <p>
+                        <strong>Front-End Development:</strong> HTML5, CSS3, JavaScript
+                        (ES6+), React, Responsive Design, Bootstrap, Tailwind CSS
+                    </p>
+                    <p>
+                        <strong>Back-End Development:</strong> Node.js, Express.js,
+                        RESTful APIs, Authentication (JWT, OAuth), MongoDB
+                    </p>
+                    <p><strong>Version Control:</strong> Git, GitHub, GitLab</p>
+                    <p><strong>Database Management:</strong> MongoDB</p>
+                    <p>
+                        <strong>API Integration:</strong> RESTful APIs, GraphQL,
+                        Third-Party APIs
+                    </p>
+                    <p>
+                        <strong>Soft Skills:</strong> Problem-Solving, Team Collaboration
+                        (Agile/Scrum), Time Management
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="project-section">
+            <h2>PROJECTS</h2>
+            <div class="project-container">
+                <div class="project">
+                    <div class="project-left-box">
+                        <video src="./assets/videos/large-thumbnail20240224-16319-1ylby7p.mp4" autoplay loop
+                            muted></video>
+                        <p class="project-name">ECOMMERCE WEBSITE</p>
+                    </div>
+                    <div class="project-right-box">
+                        <p class="about-project">
+                            This eCommerce website allows users to browse and purchase
+                            products with a sleek UI, built with modern web technologies for
+                            scalability.
+                        </p>
+                        <p class="tech-stack-names">
+                            <span>React</span>
+                            <span>Tailwind CSS</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </p>
+                        <div class="buttons">
+                            <a href="https://your-website-link.com" class="visit-btn">Visit this site</a>
+                            <a href="https://github.com/your-repo-link" class="visit-github-btn">View Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-right-box">
+                        <p class="about-project">
+                            A social media platform where users can create profiles, share
+                            posts, and engage with others through likes and comments.
+                        </p>
+                        <p class="tech-stack-names">
+                            <span>React</span>
+                            <span>Tailwind CSS</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </p>
+                        <div class="buttons">
+                            <a href="https://your-website-link.com" class="visit-btn">Visit this site</a>
+                            <a href="https://github.com/your-repo-link" class="visit-github-btn">View Github</a>
+                        </div>
+                    </div>
+                    <div class="project-left-box">
+                        <video src="./assets/videos/large-thumbnail20230525-31058-904mov.mp4" autoplay loop
+                            muted></video>
+                        <p class="project-name">SOCIAL MEDIA WEBSITE</p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-left-box">
+                        <video src="./assets/videos/large-thumbnail20240513-26959-1i4yvmo.mp4" autoplay loop
+                            muted></video>
+                        <p class="project-name">AUDIO STREAMING APP</p>
+                    </div>
+                    <div class="project-right-box">
+                        <p class="about-project">
+                            An audio streaming app that provides users access to millions of
+                            tracks and curated playlists across multiple genres.
+                        </p>
+                        <p class="tech-stack-names">
+                            <span>React</span>
+                            <span>Tailwind CSS</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </p>
+                        <div class="buttons">
+                            <a href="https://your-website-link.com" class="visit-btn">Visit this site</a>
+                            <a href="https://github.com/your-repo-link" class="visit-github-btn">View Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-right-box">
+                        <p class="about-project">
+                            A video streaming app offering users the ability to stream
+                            high-quality videos with real-time content updates and
+                            recommendations.
+                        </p>
+                        <p class="tech-stack-names">
+                            <span>React</span>
+                            <span>Tailwind CSS</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </p>
+                        <div class="buttons">
+                            <a href="https://your-website-link.com" class="visit-btn">Visit this site</a>
+                            <a href="https://github.com/your-repo-link" class="visit-github-btn">View Github</a>
+                        </div>
+                    </div>
+                    <div class="project-left-box">
+                        <video src="./assets/videos/29d1e8564fc10e142cfc1068c1fe840f.mp4" autoplay loop muted></video>
+                        <p class="project-name">VIDEO STREAMING APP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills-section">
+            <div class="skills-section-p">
+                <p>don't have</p>
+                <p>degree 😥</p>
+                <p>but have</p>
+                <p>creative coding</p>
+                <p>skills 😍</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
